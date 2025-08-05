@@ -1,0 +1,133 @@
+/* 
+    Reinicia márgenes y paddings de todos los elementos 
+    y establece el modelo de caja border-box
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    Estilo general del cuerpo de la página 
+    con tipografía y fondo en gradiente
+*/
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 
+    Contenedor principal que centra el contenido 
+    y le da un fondo blanco con bordes redondeados
+*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* 
+    Encabezado con gradiente y texto blanco centrado
+*/
+header {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 
+    Título principal dentro del header
+*/
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* 
+    Área principal de la página
+*/
+main {
+    padding: 40px;
+}
+
+/* 
+    Sección del contador de clicks
+*/
+.contador {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 
+    Título de la sección contador
+*/
+.contador h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 
+    Número del contador (grande y destacado)
+*/
+#contador {
+    font-size: 3em;
+    color: #FF6B6B;
+    font-weight: bold;
+}
+
+/* 
+    Estilos generales para los botones
+*/
+button {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* 
+    Efecto hover para los botones
+*/
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* 
+    Tarjeta de estado con un diseño tipo card
+*/
+.status-card {
+    background: #F8F9Fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #4ECDC4;
+}
+
+/* 
+    Párrafos dentro de la tarjeta de estado
+*/
+.status-card p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* 
+    Pie de página con fondo oscuro y texto blanco
+*/
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

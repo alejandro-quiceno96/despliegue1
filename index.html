@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ajusta la vista para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Mi Primera App - SENA ADSO</title>
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Encabezado de la aplicación -->
+        <header>
+            <h1>🚀 Mi Primera App</h1>
+            <!-- Nombre del estudiante que se puede personalizar -->
+            <p>Creada por: <span id="nombre-estudiante">Alejandro Quiceno - Santiago Molano - Santiago Alzate - Sebastián Perdomo</span></p>
+        </header>
+
+        <!-- Contenido principal -->
+        <main>
+
+            <!-- Sección del contador de clics -->
+            <section class="contador">
+                <h2>Contador de Clicks</h2>
+                <!-- Muestra el número de clics -->
+                <p>Has hecho click <span id="contador">0</span> veces</p>
+                <!-- Botón para incrementar el contador -->
+                <button id="btn-click">¡Haz Click!</button>
+                <!-- Botón para reiniciar el contador -->
+                <button id="btn-reset">Reset</button>
+            </section>
+
+            <!-- Sección de información sobre el despliegue -->
+            <section class="info-despliegue">
+                <h2>Estado del Despliegue</h2>
+                <div class="status-card">
+                    <!-- Información sobre el entorno de la app -->
+                    <p><strong>Entorno:</strong> <span id="entorno">Desarrollo</span></p>
+                    <!-- Información sobre la versión de la app -->
+                    <p><strong>Versión:</strong> <span id="version">1.0.0</span></p>
+                    <!-- Información sobre la plataforma de despliegue -->
+                    <p><strong>Plataforma:</strong> <span id="plataforma">Netlify</span></p>
+                    <!-- Fecha de última actualización -->
+                    <p><strong>Última actualización:</strong> <span id="fecha"></span></p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>📚 Curso de Despliegue - SENA ADSO 2025</p>
+        </footer>
+
+    </div>
+
+    <!-- Vincula el archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
